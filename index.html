@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Paint</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/background.css">
+</head>
+<body>
+	<div id="controls">
+		<div id="clear" class="container">
+			<p><input type="button" id="clear-canvas" value="Clear"></p>
+			<input type="file" id="img-file">
+		</div>
+		<div id="size" class="container">
+			<p><label>Width:</label>
+				<input type="number" id="canvas-width" value="800" min="0"></p>
+			<label>Height:</label>
+				<input type="number" id="canvas-height" value="480" min="0">
+		</div>
+		<div id="mouse-position" class="container">
+			<p><label>MouseX: </label><label id="mouseX">0</label></p>
+			<p><label>MouseY: </label><label id="mouseY">0</label></p>
+		</div>	
+		<div id="tools" class="container">
+			<div id="tool-images">
+				<img src="image/pencil.png" alt="" id="pencil" width="40" height="40px">
+				<!-- <img src="image/eraser.png" alt="" id="eraser" width="20px" height="20px"> -->
+			</div>
+		</div>
+		<div id="tool-size" class="container">
+			<details open>
+				<summary>Size</summary>
+				<ul>
+					<li id="small">Small</li>
+					<li id="middle">Middle</li>
+					<li id="big">Big</li>
+				</ul>
+			</details>
+		</div>
+		<div id="color" class="container">
+			<input type="color">
+		</div>
+		<button id="generate">generate image</button>
+		<button id="send">send</button>
+		<div class="clear"></div>
+	</div>
+	<div id="canvases">
+		<canvas id="back-canvas" width="800" height="480" class="canvas"></canvas>
+		<canvas id="front-canvas" width="800" height="480" class="canvas"></canvas>
+		<canvas id="scene"></canvas>
+	</div>
+	<div id="properties">
+		<p id="properties-title">Image</p>
+		<p><label>Width: </label><input id ="img-width" type="number" min="0"></p>
+		<p><label>Height: </label><input id ="img-height" type="number" min="0"></p>
+		<input type="button" id="invert" value="Invert image">
+	</div>
+
+	<script src="js/background.js"></script>
+	<script src="js/script.js"></script>
+</body>

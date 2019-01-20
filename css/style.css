@@ -1,0 +1,125 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #000;
+	border: 3px solid #037900;
+}
+
+.clear{
+	clear: both;
+}
+
+.canvas{
+	position: absolute;
+	top: 0;
+	right: : 500px;
+	border-bottom: 3px solid #037900;
+	border-right: 3px solid #037900;
+}
+
+/*-------------controls-------------*/
+#properties{
+	position: absolute;
+	top: 108px;
+	right: 300px;
+}
+
+#controls, #properties{
+	color: #fff;
+	height: 100px;
+	background-color: #000;
+	border-bottom: 3px solid #037900;
+}
+
+.container{
+	float: left;
+	position: relative;
+	margin: 10px 0 0 20px;
+	height: 80px;
+	width: 130px;
+	border-right: 1px solid #037900;
+}
+
+input[type="button"], input[type="file"]{
+	width: 116px;
+}
+
+input[ type="number"]{
+	width: 40px;
+	position: absolute;
+	right: 10px;
+}
+
+input[ type="color" ]{
+	widows: 60px;
+	height: 40px;
+	margin: 15px 0 0 27px;
+}
+
+#tool-images{
+	width: 50px;
+	margin: 20px 0 10px 34px;
+}
+
+#tool-images:hover, .tool-active{
+	cursor: pointer;
+	border: 2px solid #037900;
+	padding: 10px 0 5px 10px;
+}
+
+#tool-size ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#tool-size li:hover, .size-active{
+	cursor: pointer;
+	border: 1px solid;
+	border-radius: 2px;
+	background-color: #037900;
+}
+
+/*--------canvases-------*/
+#canvases{
+	position: relative;
+	margin: 5px 0 0 5px;
+}
+
+#canvases:hover{
+	cursor: pointer;
+}
+
+#front-canvas{
+	position: absolute;
+	left: 0;
+}
+
+#back-canvas{
+	position: absolute;
+	left: 0;
+	background-color: #fff;
+}
+
+/*----------properties---------*/
+#properties{
+	position: fixed;
+	right: 5px;
+	width: 130px;
+	height: 150px;
+	padding: 0 10px 0 10px;
+	display: none;
+}
+
+#properties input[ type="number" ]{
+	margin-right: 5px;
+	width: 60px;
+}
+
+#properties-title{
+	text-align: center;
+}
+
+#invert{
+	width: 120px;
+}
